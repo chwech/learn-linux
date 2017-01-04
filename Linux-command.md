@@ -120,6 +120,34 @@ bzip2 -d 压缩文件
 // 解压缩，-k 保留压缩文件  
 bunzip2 压缩文件
 // 解压缩，-k 保留压缩文件
+#### tar打包命令
+* tar -cvf 打包文件名 源文件
+* 选项：  
+-c:打包  
+-v:显示过程  
+-f:指定打包后的文件名
+* tar -xvf 打包文件名
+* 选项：  
+-x: 解打包
+#### .tar.gz格式压缩
+.tar.gz格式是先打包成.tar格式再压缩成.gz格式  
+* 命令：  
+tar -zcvf 压缩包名.tar.gz 源文件  
+* 选项：  
+-z: 压缩为.tar.gz格式  
+* 命令：  
+tar -zxvf 压缩包名.tar.gz  
+* 选项：  
+-x: 解压缩.tar.gz格式
+#### .tar.bz2格式压缩
+* 命令：  
+tar -jcvf 压缩包名.tar.bz2 源文件  
+* 选项：  
+-j: 压缩为.tar.bz2格式  
+* 命令：  
+tar -jxvf 压缩包名.tar.bz2  
+* 选项：  
+ -x: 解压缩.tar.bz2格式
 
 
 
